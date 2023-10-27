@@ -10,10 +10,10 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "25981592"))
 API_HASH = getenv("API_HASH", "709f3c9d34d83873d3c7e76cdd75b866")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "6052402912:AAHfIPMY62LggFCM4RuGrBjweOHNYIzHRUc")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI")
-DB_NAME = getenv("DB_NAME", "RiruruMusic")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://shyxdoll13:shyxdoll@cluster0.nyyxhzb.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = getenv("DB_NAME", "Test")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "100"))
 
@@ -21,9 +21,9 @@ SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "60"))
 
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001954218150"))
 
-OWNER_ID = int(getenv("OWNER_ID", "5980177243"))
+OWNER_ID = int(getenv("OWNER_ID", "5518687442"))
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheRiruru/Riruru")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TheRiruru/Test")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", "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")
@@ -63,7 +63,7 @@ CLEANMODE_DELETE_MINS = int(getenv("CLEANMODE_MINS", "13"))
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "AQGMcpgAj_5T0tVYahft8VPIWWiondpKy8GEpJlKg3P0MbRRlnqmpQR3pqs4KZ_Tq39J-to27uUADz2cXr5tt1mwv9ToT7wtaETz_rku2a2mxAPY5NIC4NtvUHXlqdXcVJ3SHo5p3PM4zwSfwGk_UCzYtavXbJ2LSc0I_WwnRBfhQSZiQCRSPIXNTvnVtZzHdnvYvTZmcUyffyqQFNZjTgksVSBPI196japFa4Q6BdZOVe2Kkgn6p3VcIq2-99pi2QVrEnJZwPtmeqWzpyhhjOCwp7-iO7XEouGxwyq-mkX7isSQ9LLmxN_BbLEVhiow3neoEpuWqxAN09OKgtVCqynkw0rv9wAAAAFR_lR4AA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
