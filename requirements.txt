@@ -15,7 +15,7 @@ python-dotenv
 pyyaml
 requests
 speedtest-cli
-spotipy
+spotipy==2.23.0
 tgcrypto
 numpy
 yt-dlp

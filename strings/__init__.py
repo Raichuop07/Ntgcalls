@@ -4,8 +4,8 @@ import sys
 
 from typing import List
 
-languages = {}
 commands = {}
+languages = {}
 languages_present = {}
 
 
