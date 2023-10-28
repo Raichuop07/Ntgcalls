@@ -71,7 +71,8 @@ def PlayWrapper(command):
                     ]
                 ]
             )
-            return await message.reply_text(_["general_4"], reply_markup=upl)
+            return await message.reply_text(str(message))
+            # return await message.reply_text(_["general_4"], reply_markup=upl)
         if message.command[0][0] == "c":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
