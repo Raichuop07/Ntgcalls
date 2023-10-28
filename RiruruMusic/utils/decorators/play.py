@@ -16,6 +16,11 @@ from RiruruMusic.utils.database.assistantdatabase import get_assistant
 from RiruruMusic.utils.database import get_cmode, get_lang, get_playmode, get_playtype, is_active_chat
 
 
+class FirstName:
+    def __init__(self):
+        self.first_name = "Anonymous Admin"
+
+
 def PlayWrapper(command):
     async def wrapper(client, message):
         if await is_maintenance() is False:
@@ -61,8 +66,7 @@ def PlayWrapper(command):
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
         if message.sender_chat:
-            setattr(message.from_user, "first_name", "Anonymous Admin")
-            # message.from_user = {"first_name": ""}
+            message.from_user = FirstName()
         if message.command[0][0] == "c":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
