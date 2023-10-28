@@ -61,7 +61,8 @@ def PlayWrapper(command):
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
         if message.sender_chat:
-            message.from_user = {"first_name": "Anonymous Admin"}
+            setattr(message.from_user, "first_name", "Anonymous Admin")
+            # message.from_user = {"first_name": ""}
         if message.command[0][0] == "c":
             chat_id = await get_cmode(message.chat.id)
             if chat_id is None:
