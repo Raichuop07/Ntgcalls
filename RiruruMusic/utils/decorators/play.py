@@ -71,7 +71,7 @@ def PlayWrapper(command):
                     ]
                 ]
             )
-            message.from_user = {"id": message.sender_chat.id, "first_name": "Anonymous Admin"}
+            message["from_user"] = {"id": message.sender_chat.id, "first_name": "Anonymous Admin"}
             # return await message.reply_text(str(message))
             # # return await message.reply_text(_["general_4"], reply_markup=upl)
         if message.command[0][0] == "c":
