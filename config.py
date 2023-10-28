@@ -11,6 +11,7 @@ API_ID = int(getenv("API_ID", "25981592"))
 API_HASH = getenv("API_HASH", "709f3c9d34d83873d3c7e76cdd75b866")
 
 BOT_TOKEN = getenv("BOT_TOKEN", "6052402912:AAHfIPMY62LggFCM4RuGrBjweOHNYIzHRUc")
+MUSIC_BOT_NAME = "ESBOT"
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://shyxdoll13:shyxdoll@cluster0.nyyxhzb.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = getenv("DB_NAME", "Test")
